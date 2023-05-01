@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>My Form</h1>
+    <form id="myform" onsubmit="return validate()">
+        <div class="form-group">
+            <label class="left" for="name">Name*</label>
+            <input type="text" id="name" name="name">
+            <div id="nameError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label class="left" for="name">Address</label>
+            <input type="text" id="address" name="address">
+        </div>
+        <div class="form-group">
+            <label class="left" for="name">Zip Code*</label>
+            <input type="text" id="zipCode" name="zipCode">
+            <div id="zipCodeError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label class="left" for="country">Country*</label>
+            <select id="country" name="country">
+                <option value="">-- Select Country --</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Mexico">Mexico</option>
+            </select>
+            <div id="countryError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="gender" class="left">Gender*</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <div id="genderError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="preferences" class="left">Preferences</label>
+            <input type="checkbox" id="preference1" name="preference1" value="preference1">
+            <label for="preference1">Blue</label>
+            <input type="checkbox" id="preference2" name="preference2" value="preference2">
+            <label for="preference2">Green</label>
+            <input type="checkbox" id="preference3" name="preference3" value="preference3">
+            <label for="preference3">Red</label>
+            <div id="preferencesError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="phone" class="left">Phone*</label>
+            <input type="text" id="phone" name="phone">
+            <div id="phoneError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="left">Email*</label>
+            <input type="email" id="email" name="email">
+            <div id="emailError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="left">Password*</label>
+            <input type="password" id="password" name="password">
+            <div id="passwordError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="verifyPassword" class="left">Verify Password*</label>
+            <input type="password" id="verifyPassword" name="verifyPassword">
+            <div id="verifyPasswordError" class="error"></div>
+        </div>
+        <div class="form-buttons">
+            <button type="submit">Send</button>
+            <button type="reset">Clear</button>
+        </div>
+    </form>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
